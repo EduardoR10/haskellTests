@@ -1,5 +1,4 @@
 module Main where
-
 import Bowling
 import Test.Tasty
 import Test.Tasty.HUnit
@@ -31,7 +30,7 @@ testPerfectGame = testCase "Test con Strikes consecutivos (Juego perfecto)" $ do
 testAllOpenFrames :: TestTree
 testAllOpenFrames = testCase "Test con todos Open frames" $ do
     let game = [3, 5, 2, 4, 6, 3, 1, 7, 8, 1, 4, 2, 5, 3, 7, 2, 4, 6, 3, 6]
-    scorePlay game @?= Just 85  -- Puntaje corregido según cálculos esperados
+    scorePlay game @?= Just 85  
 
 -- Función principal para ejecutar los tests
 main :: IO ()
